@@ -1,0 +1,6 @@
+{
+    "db_username" : "postgresUser",
+    "db_password" : "Contra1234.",
+    "db_name" : "postgresdb",
+    "db_port" : 5432
+}

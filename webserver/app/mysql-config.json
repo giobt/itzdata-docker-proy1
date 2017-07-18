@@ -1,0 +1,6 @@
+{
+    "db_username" : "mysqlUser",
+    "db_password" : "Contra1234.",
+    "db_name" : "mysqldb",
+    "db_port" : 3306
+}

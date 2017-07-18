@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <title>Docker compose!</title>
+    </head>
+    <body>
+        <p>
+            <h1>Hello Itzdata world from Docker Compose!</h1>
+            <br>
+            This application was automatically created from a docker-compose file<br>
+            that initializes three containers:<br>
+            <ul>
+                <li>
+                    webserver: ubuntu with nginx, nodejs and npm installed. It retrieves records<br>
+                    from a mysql and a postgres databases.
+                </li>
+                <li>
+                    mysqldb: ubuntu image with mysql installed and a startup script.
+                </li>
+                <li>
+                    postgresdb: ubuntu image with postgres installed and a startup script.
+                </li>
+            </ul>
+            <br>
+            Show content from MySQL database:<br>
+            <button id="mysqlButton"></button>
+            <div id="mysqlContent"></div>
+            <br>
+            Show content from Postgres database:<br>
+            <button id="postgresButton"></button>
+            <div id="postgresContent"></div>
+        </p>
+        <script type="text/javascript">
+            $('#mysqlButton').on('click', function(){
+                alert('mysql button pushed!');
+            });
+
+            $('#postgresButton').on('click', function(){
+                alert('postgres button pushed!');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  mysqldb:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Contra1234.
+      MYSQL_DATABASE: itzgiodb
+      MYSQL_USER: giorgio
+      MYSQL_PASSWORD: Contra1234.
+    ports:
+      - 3306:3306
+  postgresdb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: Contra1234.
+      POSTGRES_USER: giorgio
+      POSTGRES_DB: itzgiopg
+    ports:
+      - 5432:5432
+  webserver:
+    image: php:7.0-apache
+    
+
