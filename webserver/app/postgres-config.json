@@ -1,6 +1,7 @@
 {
-    "db_username" : "postgresUser",
+    "db_host" : "postgresdb",
+    "db_username" : "giorgio",
     "db_password" : "Contra1234.",
-    "db_name" : "postgresdb",
+    "db_name" : "itzgiodb",
     "db_port" : 5432
 }
